@@ -1,3 +1,5 @@
+import { NextFunction, Request, Response } from 'express';
+
 export interface UserInterface {
   id: string;
   profilePhoto: '';
@@ -29,3 +31,9 @@ export interface JsonStreamDataInterface {
   key: string;
   value: Array<UserInterface>;
 }
+
+export type HandlerFunction = (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => void;

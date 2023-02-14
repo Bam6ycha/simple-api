@@ -3,6 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 
 import * as UserController from './controllers/usersController';
+import * as PostsController from './controllers/postsController';
 
 const PORT = process.env.PORT ?? 5000;
 
@@ -35,15 +36,15 @@ app.use(
   },
 );
 
-app.get('/newsfeed', UserController.getAllPosts);
-app.get('/newsfeed/:id', UserController.getPostById);
+app.get('/newsfeed', PostsController.getAllPosts);
+app.get('/newsfeed/:id', PostsController.getPostById);
 app.get('/:id', UserController.findUserById);
 app.get('/', UserController.getAll);
 
-app.post('/newsfeed', UserController.addPost);
+app.post('/newsfeed', PostsController.addPost);
 app.post('/user', UserController.addUser);
 
-app.delete('/newsfeed/:id', UserController.deletePost);
+app.delete('/newsfeed/:id', PostsController.deletePost);
 app.delete('/:id', UserController.deleteUser);
 
 app.listen(PORT, () => {
