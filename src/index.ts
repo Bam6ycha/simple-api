@@ -6,6 +6,7 @@ import http from 'http';
 
 import * as UserController from './controllers/usersController';
 import * as PostsController from './controllers/postsController';
+import { formatMessage, updateChatHistory } from './utils';
 
 const PORT = process.env.PORT ?? 5000;
 
@@ -13,10 +14,20 @@ const app = express();
 
 const server = http.createServer(app);
 
-const wss = new Server(server, { serveClient: false });
+const wss = new Server(server, { cors: { ...cors() } });
 
-wss.on('connection', () => {
-  console.log('connected');
+wss.on('connection', (socket) => {
+  socket.on('userId', (message) => {
+    const { userIdFrom, userIdTo } = message;
+    const room = `${userIdFrom}-${userIdTo} Room`;
+
+    socket.join(room);
+    socket.on('chatMessage', async (message) => {
+      const { text, time } = formatMessage(message);
+      await updateChatHistory(userIdFrom, userIdTo, { text, time });
+      socket.broadcast.to(room).emit('message', JSON.stringify({ text, time }));
+    });
+  });
 });
 
 app.use(cors(), bodyParser.json(), bodyParser.urlencoded({ extended: false }));
@@ -50,7 +61,7 @@ app.use(
 app.get('/newsfeed', PostsController.getAllPosts);
 app.get('/newsfeed/:id', PostsController.getPostById);
 app.get('/:id', UserController.findUserById);
-app.get('/', UserController.getAll);
+app.get('/users', UserController.getAll);
 
 app.post('/newsfeed', PostsController.addPost);
 app.post('/user', UserController.addUser);

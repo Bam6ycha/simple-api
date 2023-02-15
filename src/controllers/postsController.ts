@@ -55,6 +55,6 @@ export const getAllPosts: HandlerFunction = (req, res, next) => {
     })
     .pipe(res)
     .on('finish', () => {
-      res.status(200);
+      res.status(201);
     });
 };

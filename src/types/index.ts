@@ -6,8 +6,9 @@ export interface UserInterface {
   name: string;
   surname: string;
   location: string;
-  socialMedia: [instagram: string, twitter: string, linkedIn: string];
+  socialMedia: { instagram: string; twitter: string; linkedIn: string };
   email: string;
+  chat: Array<ChatInterface>;
   info: {
     hobbies: string;
     music: string;
@@ -30,6 +31,17 @@ export interface PostInterface {
   isLikedByUser: boolean;
 }
 
+export interface ChatInterface {
+  senderId: string;
+  history: Array<ChatHistoryInterface>;
+}
+
+interface ChatHistoryInterface {
+  text: string;
+  time: string;
+  isOwnMessage: boolean;
+}
+
 export interface JsonStreamDataInterface {
   key: string;
   value: Array<UserInterface>;
@@ -40,3 +52,8 @@ export type HandlerFunction = (
   res: Response,
   next: NextFunction,
 ) => void;
+
+export interface UserMessageInterface {
+  text: string;
+  userIdTo: string;
+}

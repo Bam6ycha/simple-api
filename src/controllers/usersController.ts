@@ -33,7 +33,7 @@ export const addUser: HandlerFunction = async (req, res, next) => {
   try {
     const { body } = req;
 
-    const userWithId: UserInterface = { ...body, id: v4() };
+    const userWithId: UserInterface = { ...body, id: v4(), chat: [] };
 
     await UsersModel.addUser(userWithId);
 

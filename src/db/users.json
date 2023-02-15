@@ -9,6 +9,75 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [
+      {
+        "senderId": "2",
+        "history": [
+          { "text": "Hello 2", "time": "9:43 pm", "isOwnMessage": true },
+          { "text": "da", "time": "9:45 pm", "isOwnMessage": true },
+          { "text": "daksf", "time": "9:56 pm", "isOwnMessage": true },
+          { "text": "fa", "time": "9:56 pm", "isOwnMessage": true },
+          { "text": "fas", "time": "9:56 pm", "isOwnMessage": true },
+          { "text": "fa", "time": "9:56 pm", "isOwnMessage": true },
+          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": true },
+          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": true }
+        ]
+      },
+      {
+        "senderId": "3",
+        "history": [
+          { "text": "Hello 3", "time": "9:43 pm", "isOwnMessage": true }
+        ]
+      },
+      {
+        "senderId": "12",
+        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": true }]
+      },
+      {
+        "senderId": "7",
+        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": true }]
+      },
+      {
+        "senderId": "13",
+        "history": [
+          { "text": "rep", "time": "9:54 pm", "isOwnMessage": true },
+          {
+            "text": "askfmsafaslfk;aslf",
+            "time": "9:54 pm",
+            "isOwnMessage": true
+          },
+          { "text": "asf", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "asf", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "sa", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "f", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "saf", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "afa", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "fa", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "sf", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "sfa", "time": "9:57 pm", "isOwnMessage": true }
+        ]
+      },
+      {
+        "senderId": "5",
+        "history": [
+          { "text": "dsa", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "fa", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "s", "time": "9:57 pm", "isOwnMessage": true },
+          { "text": "re", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "gsd", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "fas", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "gas", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "gas", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "ga", "time": "9:58 pm", "isOwnMessage": true },
+          { "text": "sgrw", "time": "9:59 pm", "isOwnMessage": true },
+          { "text": "asf", "time": "9:59 pm", "isOwnMessage": true },
+          { "text": "as", "time": "9:59 pm", "isOwnMessage": true },
+          { "text": "fas", "time": "9:59 pm", "isOwnMessage": true },
+          { "text": "qr", "time": "9:59 pm", "isOwnMessage": true },
+          { "text": "qwe", "time": "9:59 pm", "isOwnMessage": true }
+        ]
+      }
+    ],
     "posts": [
       {
         "id": "0",
@@ -16,6 +85,14 @@
         "date": "12412512",
         "content": "",
         "likes": 2
+      },
+      {
+        "userId": "1",
+        "date": "12412512",
+        "content": "cucumber",
+        "likes": 3,
+        "id": "4e0ff1c1-6776-4cc7-af15-33696affde27",
+        "created": 1676456805742
       }
     ],
     "photos": []
@@ -24,20 +101,23 @@
     "id": "2",
     "profilePhoto": "",
     "name": "Foo",
+    "surname": "Bar",
+    "location": "Belarus",
     "chat": [
       {
-        "userID": "dasdas",
+        "senderId": "1",
         "history": [
-          {
-            "from": "",
-            "time": "dasdas",
-            "content": "dasdsa"
-          }
+          { "text": "Hello 2", "time": "9:43 pm", "isOwnMessage": false },
+          { "text": "da", "time": "9:45 pm", "isOwnMessage": false },
+          { "text": "daksf", "time": "9:56 pm", "isOwnMessage": false },
+          { "text": "fa", "time": "9:56 pm", "isOwnMessage": false },
+          { "text": "fas", "time": "9:56 pm", "isOwnMessage": false },
+          { "text": "fa", "time": "9:56 pm", "isOwnMessage": false },
+          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": false },
+          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": false }
         ]
       }
     ],
-    "surname": "Bar",
-    "location": "Belarus",
     "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
@@ -59,6 +139,14 @@
     "name": "Foo",
     "surname": "Bar",
     "location": "Belarus",
+    "chat": [
+      {
+        "senderId": "1",
+        "history": [
+          { "text": "Hello 3", "time": "9:43 pm", "isOwnMessage": false }
+        ]
+      }
+    ],
     "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
@@ -82,6 +170,7 @@
     "location": "Belarus",
     "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
     "email": "dasd@mail.ru",
+    "chat": [],
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
     "posts": [
@@ -101,6 +190,28 @@
     "name": "Foo",
     "surname": "Bar",
     "location": "Belarus",
+    "chat": [
+      {
+        "senderId": "1",
+        "history": [
+          { "text": "dsa", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "fa", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "s", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "re", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "gsd", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "fas", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "gas", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "gas", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "ga", "time": "9:58 pm", "isOwnMessage": false },
+          { "text": "sgrw", "time": "9:59 pm", "isOwnMessage": false },
+          { "text": "asf", "time": "9:59 pm", "isOwnMessage": false },
+          { "text": "as", "time": "9:59 pm", "isOwnMessage": false },
+          { "text": "fas", "time": "9:59 pm", "isOwnMessage": false },
+          { "text": "qr", "time": "9:59 pm", "isOwnMessage": false },
+          { "text": "qwe", "time": "9:59 pm", "isOwnMessage": false }
+        ]
+      }
+    ],
     "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
@@ -122,6 +233,7 @@
     "name": "Foo",
     "surname": "Bar",
     "location": "Belarus",
+    "chat": [],
     "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
@@ -147,6 +259,12 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [
+      {
+        "senderId": "1",
+        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": false }]
+      }
+    ],
     "posts": [
       {
         "id": "0",
@@ -168,6 +286,7 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [],
     "posts": [
       {
         "id": "0",
@@ -189,6 +308,7 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [],
     "posts": [
       {
         "id": "0",
@@ -210,6 +330,7 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [],
     "posts": [
       {
         "id": "0",
@@ -231,6 +352,7 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [],
     "posts": [
       {
         "id": "0",
@@ -252,6 +374,12 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [
+      {
+        "senderId": "1",
+        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": false }]
+      }
+    ],
     "posts": [
       {
         "id": "0",
@@ -273,6 +401,28 @@
     "email": "dasd@mail.ru",
     "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
     "friends": ["2", "3"],
+    "chat": [
+      {
+        "senderId": "1",
+        "history": [
+          { "text": "rep", "time": "9:54 pm", "isOwnMessage": false },
+          {
+            "text": "askfmsafaslfk;aslf",
+            "time": "9:54 pm",
+            "isOwnMessage": false
+          },
+          { "text": "asf", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "asf", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "sa", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "f", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "saf", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "afa", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "fa", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "sf", "time": "9:57 pm", "isOwnMessage": false },
+          { "text": "sfa", "time": "9:57 pm", "isOwnMessage": false }
+        ]
+      }
+    ],
     "posts": [
       {
         "id": "0",
