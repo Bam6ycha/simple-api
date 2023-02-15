@@ -1,7 +1,7 @@
 import { v4 } from 'uuid';
 
 import * as UsersModel from '../models/usersModel';
-import { HandlerFunction, UserInterface } from 'src/types';
+import { HandlerFunction, UserInterface } from '../types';
 
 export const getAll: HandlerFunction = (req, res, next) => {
   try {
@@ -55,4 +55,19 @@ export const deleteUser: HandlerFunction = async (req, res, next) => {
     next(error);
     res.status(400).send('bad request');
   }
+};
+
+export const login: HandlerFunction = (req, res, next) => {
+  const {
+    body: { login, password },
+  } = req;
+
+  UsersModel.login(login, password)
+    .on('error', (error) => {
+      res.status(401).send(error.message);
+    })
+    .pipe(res)
+    .on('end', () => {
+      res.status(200).send({});
+    });
 };

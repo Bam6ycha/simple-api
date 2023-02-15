@@ -14,9 +14,11 @@ export interface UserInterface {
     cinema: string;
     books: string;
   };
-  friends: Array<string>[];
+  friends: Array<string>;
   posts: Array<PostInterface>;
-  photos: Array<string>[];
+  photos: Array<string>;
+  login: string;
+  password: string;
 }
 
 export interface PostInterface {
@@ -25,6 +27,7 @@ export interface PostInterface {
   date: string | number;
   content: string;
   likes: number;
+  isLikedByUser: boolean;
 }
 
 export interface JsonStreamDataInterface {

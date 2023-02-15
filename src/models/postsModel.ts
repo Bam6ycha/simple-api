@@ -7,9 +7,9 @@ import {
   JsonStreamDataInterface,
   PostInterface,
   UserInterface,
-} from 'src/types';
-import { readUsers } from 'src/utils';
-import { usersPath } from 'src/constants';
+} from '../types';
+import { readUsers } from '../utils';
+import { usersPath } from '../constants';
 
 export const getAllPosts = () => {
   const getPosts = (users: Array<UserInterface>) =>

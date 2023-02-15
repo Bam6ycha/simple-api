@@ -1,6 +1,8 @@
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import { Server } from 'socket.io';
+import http from 'http';
 
 import * as UserController from './controllers/usersController';
 import * as PostsController from './controllers/postsController';
@@ -8,6 +10,15 @@ import * as PostsController from './controllers/postsController';
 const PORT = process.env.PORT ?? 5000;
 
 const app = express();
+
+const server = http.createServer(app);
+
+const wss = new Server(server, { serveClient: false });
+
+wss.on('connection', () => {
+  console.log('connected');
+});
+
 app.use(cors(), bodyParser.json(), bodyParser.urlencoded({ extended: false }));
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.setHeader('charset', 'utf8');
@@ -47,6 +58,6 @@ app.post('/user', UserController.addUser);
 app.delete('/newsfeed/:id', PostsController.deletePost);
 app.delete('/:id', UserController.deleteUser);
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server listen on port ${PORT}`);
 });

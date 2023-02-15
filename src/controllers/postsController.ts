@@ -1,4 +1,4 @@
-import { HandlerFunction, PostInterface } from 'src/types';
+import { HandlerFunction, PostInterface } from '../types';
 import { v4 } from 'uuid';
 import * as PostsModel from '../models/postsModel';
 
@@ -6,7 +6,11 @@ export const addPost: HandlerFunction = async (req, res, next) => {
   try {
     const { body } = req;
 
-    const bodyWithId: PostInterface = { ...body, id: v4() };
+    const bodyWithId: PostInterface = {
+      ...body,
+      id: v4(),
+      created: Date.now(),
+    };
 
     await PostsModel.addPost(bodyWithId);
 

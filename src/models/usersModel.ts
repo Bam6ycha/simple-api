@@ -1,12 +1,11 @@
-import path from 'path';
 import { Transform } from 'stream';
 import { parser } from 'stream-json';
 import { streamValues } from 'stream-json/streamers/StreamValues';
 import { readFile, writeFile } from 'fs/promises';
 
-import { JsonStreamDataInterface, UserInterface } from 'src/types';
-import { readUsers } from 'src/utils';
-import { usersPath } from 'src/constants';
+import { JsonStreamDataInterface, UserInterface } from '../types';
+import { readUsers } from '../utils';
+import { usersPath } from '../constants';
 
 export const getAllUsers = () => {
   return readUsers(usersPath);
@@ -49,4 +48,36 @@ export const deleteUser = async (id: string) => {
     usersPath,
     JSON.stringify([...updatedUsers.filter(({ id: userId }) => id !== userId)]),
   );
+};
+
+export const login = (login: string, password: string) => {
+  const isAllowToLogin = (users: Array<UserInterface>) =>
+    users.find(
+      ({ login: userLogin, password: userPassword }) =>
+        userLogin === login && password === userPassword,
+    );
+
+  const transform = new Transform({
+    objectMode: true,
+    transform(chunk: JsonStreamDataInterface, encoding, callback) {
+      const user = isAllowToLogin(chunk.value);
+
+      if (user) {
+        callback(null, JSON.stringify(user));
+      } else {
+        callback({
+          message: 'Unauthorized',
+          type: 'Unauthorized',
+        } as unknown as Error);
+      }
+    },
+  });
+
+  return readUsers(usersPath)
+    .on('error', (error) => {
+      console.log(error);
+    })
+    .pipe(parser())
+    .pipe(streamValues())
+    .pipe(transform);
 };
