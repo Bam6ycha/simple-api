@@ -33,11 +33,16 @@ export const updateChatHistory = async (
   const users = await readFile(usersPath, { encoding: 'utf8' });
   const parsedUsers = JSON.parse(users) as Array<UserInterface>;
 
+  const userInfoFrom = parsedUsers.find(({ id }) => id === userIdFrom)!;
+  const userInfoTo = parsedUsers.find(({ id }) => id === userIdTo)!;
+
   const currentUser = parsedUsers.flatMap((user) => {
     if (user.id === userIdFrom) {
       const chatWithUserTo = user.chat.find(
         ({ senderId }) => senderId === userIdTo,
       );
+
+      const { name, surname, profilePhoto } = userInfoTo;
 
       return chatWithUserTo
         ? {
@@ -60,6 +65,11 @@ export const updateChatHistory = async (
               ...user.chat,
               {
                 senderId: userIdTo,
+                senderInfo: {
+                  name,
+                  surname,
+                  profilePhoto,
+                },
                 history: [{ text, time, isOwnMessage: true }],
               },
             ],
@@ -68,6 +78,8 @@ export const updateChatHistory = async (
       const chatWithUserFrom = user.chat.find(
         ({ senderId }) => senderId === userIdFrom,
       );
+
+      const { name, surname, profilePhoto } = userInfoFrom;
 
       return chatWithUserFrom
         ? {
@@ -90,6 +102,7 @@ export const updateChatHistory = async (
               ...user.chat,
               {
                 senderId: userIdFrom,
+                senderInfo: { name, surname, profilePhoto },
                 history: [{ text, time, isOwnMessage: false }],
               },
             ],

@@ -58,3 +58,17 @@ export const getAllPosts: HandlerFunction = (req, res, next) => {
       res.status(201);
     });
 };
+
+export const updatePost: HandlerFunction = async (req, res, next) => {
+  try {
+    const { id: postId } = req.params;
+    const { body } = req;
+
+    await PostsModel.updatePost(postId, body);
+
+    res.status(200).send({});
+  } catch (error) {
+    res.status(500).send('Internal server error');
+    next(error);
+  }
+};

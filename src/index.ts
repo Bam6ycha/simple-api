@@ -6,6 +6,7 @@ import http from 'http';
 
 import * as UserController from './controllers/usersController';
 import * as PostsController from './controllers/postsController';
+import * as ChatsController from './controllers/chatsController';
 import { formatMessage, updateChatHistory } from './utils';
 
 const PORT = process.env.PORT ?? 5000;
@@ -58,13 +59,18 @@ app.use(
   },
 );
 
-app.get('/newsfeed', PostsController.getAllPosts);
 app.get('/newsfeed/:id', PostsController.getPostById);
-app.get('/:id', UserController.findUserById);
+app.get('/newsfeed', PostsController.getAllPosts);
+app.get('/users/chat/:id', ChatsController.getUserChat);
+app.get('/users/:id', UserController.findUserById);
 app.get('/users', UserController.getAll);
 
 app.post('/newsfeed', PostsController.addPost);
 app.post('/user', UserController.addUser);
+app.post('/user/login', UserController.login);
+
+app.put('/newsfeed/:id', PostsController.updatePost);
+app.put('/users/:id', UserController.updateUser);
 
 app.delete('/newsfeed/:id', PostsController.deletePost);
 app.delete('/:id', UserController.deleteUser);

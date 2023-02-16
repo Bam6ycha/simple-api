@@ -54,7 +54,9 @@ export const getPostById = (id: string) => {
 };
 
 export const addPost = async (body: PostInterface) => {
-  const { userId } = body;
+  const {
+    user: { id: userId },
+  } = body;
   const users = await readFile(usersPath, { encoding: 'utf8' });
 
   const updatedUsers = (JSON.parse(users) as Array<UserInterface>).map((user) =>
@@ -77,4 +79,20 @@ export const deletePost = async (id: string) => {
       })),
     ]),
   );
+};
+
+export const updatePost = async (id: string, body: PostInterface) => {
+  try {
+    const users = await readFile(usersPath, { encoding: 'utf8' });
+
+    const parsedUsers = JSON.parse(users) as Array<UserInterface>;
+
+    const updatedPosts = parsedUsers.flatMap((user) => ({
+      ...user,
+      posts: user.posts.flatMap((post) => (post.id === id ? body : post)),
+    }));
+    await writeFile(usersPath, JSON.stringify(updatedPosts));
+  } catch (error) {
+    console.log(error);
+  }
 };

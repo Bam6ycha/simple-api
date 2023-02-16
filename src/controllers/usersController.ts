@@ -71,3 +71,10 @@ export const login: HandlerFunction = (req, res, next) => {
       res.status(200).send({});
     });
 };
+
+export const updateUser: HandlerFunction = async (req, res, next) => {
+  const { id: userId } = req.params;
+  const { body } = req;
+
+  await UsersModel.updateUser(userId, body);
+};

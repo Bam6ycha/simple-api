@@ -1,437 +1,413 @@
 [
   {
-    "id": "1",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
+    "login": "meganfox",
+    "password": "meganfox",
+    "id": "0",
+    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+    "name": "Megan",
+    "surname": "Fox",
+    "location": "Mozyr, Belarus",
+    "socialMedia": {
+      "instagram": "meganfox",
+      "twitter": "meganfox",
+      "linkedIn": "anhelinazhuravskaya"
+    },
+    "email": "meganthebest@gmail.com",
+    "info": {
+      "hobbies": "witchcraft",
+      "music": "everything but mgk ;)",
+      "cinema": "jennifers body",
+      "books": "ninja turtles"
+    },
+    "friends": ["1", "2", "3"],
+    "posts": [
+      {
+        "id": "0",
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
+      },
+      {
+        "id": "2",
+        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
+        "date": "1676488446677",
+        "text": "Хто крутіший за iPhone? Пес Патрон, пес Патрон!",
+        "likes": 42,
+        "isLikedByUser": false
+      },
+      {
+        "id": "3",
+        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
+        "date": "1673388774477",
+        "text": "Хто не ходить на газон? Пес Патрон, пес Патрон!",
+        "likes": 55,
+        "isLikedByUser": false
+      }
+    ],
+    "photos": [
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/1.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+    ],
     "chat": [
       {
-        "senderId": "2",
+        "senderId": "1",
+        "senderInfo": {
+          "name": "Slim",
+          "surname": "Shady",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+        },
         "history": [
-          { "text": "Hello 2", "time": "9:43 pm", "isOwnMessage": true },
-          { "text": "da", "time": "9:45 pm", "isOwnMessage": true },
-          { "text": "daksf", "time": "9:56 pm", "isOwnMessage": true },
-          { "text": "fa", "time": "9:56 pm", "isOwnMessage": true },
-          { "text": "fas", "time": "9:56 pm", "isOwnMessage": true },
-          { "text": "fa", "time": "9:56 pm", "isOwnMessage": true },
-          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": true },
-          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": true }
+          {
+            "text": "Hi Megan how are you.....",
+            "time": "1673388774477",
+            "isOwnMessage": false
+          },
+          {
+            "text": "I think you are not real just government project",
+            "time": "1673388774477",
+            "isOwnMessage": false
+          },
+          { "text": "Ok...", "time": "1673388774479", "isOwnMessage": true }
+        ]
+      },
+      {
+        "senderId": "2",
+        "senderInfo": {
+          "name": "Dog",
+          "surname": "Patron",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
+        },
+        "history": [
+          {
+            "text": "Patron you are the best dog!!!!",
+            "time": "1673388774477",
+            "isOwnMessage": true
+          },
+          {
+            "text": "Дзякуй Меган, ти теж супер!",
+            "time": "1673388774488",
+            "isOwnMessage": false
+          }
         ]
       },
       {
         "senderId": "3",
+        "senderInfo": {
+          "name": "Biggie",
+          "surname": "Smalls",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+        },
         "history": [
-          { "text": "Hello 3", "time": "9:43 pm", "isOwnMessage": true }
-        ]
-      },
-      {
-        "senderId": "12",
-        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": true }]
-      },
-      {
-        "senderId": "7",
-        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": true }]
-      },
-      {
-        "senderId": "13",
-        "history": [
-          { "text": "rep", "time": "9:54 pm", "isOwnMessage": true },
           {
-            "text": "askfmsafaslfk;aslf",
-            "time": "9:54 pm",
+            "text": "Wanna hang out?",
+            "time": "1673388774477",
             "isOwnMessage": true
           },
-          { "text": "asf", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "asf", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "sa", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "f", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "saf", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "afa", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "fa", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "sf", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "sfa", "time": "9:57 pm", "isOwnMessage": true }
-        ]
-      },
-      {
-        "senderId": "5",
-        "history": [
-          { "text": "dsa", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "fa", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "s", "time": "9:57 pm", "isOwnMessage": true },
-          { "text": "re", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "gsd", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "fas", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "gas", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "gas", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "ga", "time": "9:58 pm", "isOwnMessage": true },
-          { "text": "sgrw", "time": "9:59 pm", "isOwnMessage": true },
-          { "text": "asf", "time": "9:59 pm", "isOwnMessage": true },
-          { "text": "as", "time": "9:59 pm", "isOwnMessage": true },
-          { "text": "fas", "time": "9:59 pm", "isOwnMessage": true },
-          { "text": "qr", "time": "9:59 pm", "isOwnMessage": true },
-          { "text": "qwe", "time": "9:59 pm", "isOwnMessage": true }
-        ]
-      }
-    ],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "1",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      },
-      {
-        "userId": "1",
-        "date": "12412512",
-        "content": "cucumber",
-        "likes": 3,
-        "id": "4e0ff1c1-6776-4cc7-af15-33696affde27",
-        "created": 1676456805742
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "2",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [
-          { "text": "Hello 2", "time": "9:43 pm", "isOwnMessage": false },
-          { "text": "da", "time": "9:45 pm", "isOwnMessage": false },
-          { "text": "daksf", "time": "9:56 pm", "isOwnMessage": false },
-          { "text": "fa", "time": "9:56 pm", "isOwnMessage": false },
-          { "text": "fas", "time": "9:56 pm", "isOwnMessage": false },
-          { "text": "fa", "time": "9:56 pm", "isOwnMessage": false },
-          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": false },
-          { "text": "sfa", "time": "9:56 pm", "isOwnMessage": false }
-        ]
-      }
-    ],
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "2",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "3",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [
-          { "text": "Hello 3", "time": "9:43 pm", "isOwnMessage": false }
-        ]
-      }
-    ],
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "3",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "4",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "chat": [],
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "4",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "5",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [
-          { "text": "dsa", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "fa", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "s", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "re", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "gsd", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "fas", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "gas", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "gas", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "ga", "time": "9:58 pm", "isOwnMessage": false },
-          { "text": "sgrw", "time": "9:59 pm", "isOwnMessage": false },
-          { "text": "asf", "time": "9:59 pm", "isOwnMessage": false },
-          { "text": "as", "time": "9:59 pm", "isOwnMessage": false },
-          { "text": "fas", "time": "9:59 pm", "isOwnMessage": false },
-          { "text": "qr", "time": "9:59 pm", "isOwnMessage": false },
-          { "text": "qwe", "time": "9:59 pm", "isOwnMessage": false }
-        ]
-      }
-    ],
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "5",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "6",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "chat": [],
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "6",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "7",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": false }]
-      }
-    ],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "7",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "8",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "8",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "9",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "9",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "10",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "10",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "11",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "11",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "12",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [{ "text": "das", "time": "9:53 pm", "isOwnMessage": false }]
-      }
-    ],
-    "posts": [
-      {
-        "id": "0",
-        "userId": "12",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
-      }
-    ],
-    "photos": []
-  },
-  {
-    "id": "13",
-    "profilePhoto": "",
-    "name": "Foo",
-    "surname": "Bar",
-    "location": "Belarus",
-    "socialMedia": [{ "instagram": "" }, { "twitter": "" }, { "linkedIn": "" }],
-    "email": "dasd@mail.ru",
-    "info": { "hobbies": "", "music": "", "cinema": "", "books": "" },
-    "friends": ["2", "3"],
-    "chat": [
-      {
-        "senderId": "1",
-        "history": [
-          { "text": "rep", "time": "9:54 pm", "isOwnMessage": false },
           {
-            "text": "askfmsafaslfk;aslf",
-            "time": "9:54 pm",
+            "text": "Дзякуй Меган, but no",
+            "time": "1673388774488",
+            "isOwnMessage": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "login": "eminem",
+    "password": "eminem",
+    "id": "1",
+    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg",
+    "name": "Slim",
+    "surname": "Shady",
+    "location": "Brest, Belarus",
+    "socialMedia": {
+      "instagram": "eminem",
+      "twitter": "eminem",
+      "linkedIn": null
+    },
+    "email": "eminemthebest@gmail.com",
+    "info": {
+      "hobbies": "i love rap",
+      "music": "Palina, Doja Cat, Metallica, Placebo, The Kooks, Один в каноэ",
+      "cinema": "8 mile",
+      "books": "cook books"
+    },
+    "friends": ["0", "2", "3"],
+    "posts": [
+      {
+        "id": "0",
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
+      }
+    ],
+    "photos": [
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/1.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/2.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+    ],
+    "chat": [
+      {
+        "senderId": "0",
+        "senderInfo": {
+          "name": "Megan",
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+        },
+        "history": [
+          {
+            "text": "Hi Megan how are you.....",
+            "time": "1673388774477",
+            "isOwnMessage": true
+          },
+          {
+            "text": "I think you are not real just government project",
+            "time": "1673388774488",
+            "isOwnMessage": true
+          },
+          { "text": "Ok..", "time": "1673388774499", "isOwnMessage": false }
+        ]
+      },
+      {
+        "senderId": "3",
+        "senderInfo": {
+          "name": "Biggie",
+          "surname": "Smalls",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+        },
+        "history": [
+          {
+            "text": "Heard Rihanna's last song?",
+            "time": "1673388774347",
+            "isOwnMessage": true
+          },
+          {
+            "text": "Yes it's sucks",
+            "time": "1673388774488",
             "isOwnMessage": false
           },
-          { "text": "asf", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "asf", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "sa", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "f", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "saf", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "afa", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "fa", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "sf", "time": "9:57 pm", "isOwnMessage": false },
-          { "text": "sfa", "time": "9:57 pm", "isOwnMessage": false }
+          { "text": "Agree", "time": "1673388774499", "isOwnMessage": true },
+          { "text": "kjljl", "time": "2:33 pm", "isOwnMessage": true },
+          { "text": "calo", "time": "5:16 pm", "isOwnMessage": true },
+          { "text": "calo I reper", "time": "5:17 pm", "isOwnMessage": true },
+          { "text": "rep", "time": "5:20 pm", "isOwnMessage": true }
+        ]
+      },
+      {
+        "senderId": "2",
+        "senderInfo": {
+          "name": "Dog",
+          "surname": "Patron",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
+        },
+        "history": [
+          {
+            "text": "Heard Rihanna's last song?",
+            "time": "1673388774347",
+            "isOwnMessage": true
+          },
+          {
+            "text": "No eminem relax she's better than you anyway..",
+            "time": "1673388774488",
+            "isOwnMessage": false
+          },
+          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": true },
+          { "text": "dsa", "time": "2:09 pm", "isOwnMessage": true }
         ]
       }
-    ],
+    ]
+  },
+  {
+    "login": "pespatron",
+    "password": "pespatron",
+    "id": "2",
+    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
+    "name": "Dog",
+    "surname": "Patron",
+    "location": "Kyiv, Ukraine",
+    "socialMedia": {
+      "instagram": "patron_dsns",
+      "twitter": null,
+      "linkedIn": null
+    },
+    "email": "patronthebest@gmail.com",
+    "info": {
+      "hobbies": "співати пісні наді дорофеєвай, грати на вулиці, гавкати",
+      "music": "Надя Дорофеева, Alyona Alyona, Ваня Дорн",
+      "cinema": "кішки проти собак",
+      "books": "не люблю читати, краще поговорити"
+    },
+    "friends": ["0", "1", "3"],
     "posts": [
       {
         "id": "0",
-        "userId": "13",
-        "date": "12412512",
-        "content": "",
-        "likes": 2
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
+      },
+      {
+        "id": "0",
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
       }
     ],
-    "photos": []
+    "photos": [
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/2.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/3.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/4.jpeg"
+    ],
+    "chat": [
+      {
+        "senderId": "0",
+        "senderInfo": {
+          "name": "Megan",
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+        },
+        "history": [
+          {
+            "text": "Patron you are the best dog!!!!",
+            "time": "1673388774477",
+            "isOwnMessage": false
+          },
+          {
+            "text": "Дзякуй Меган, ти теж супер!",
+            "time": "1673388774488",
+            "isOwnMessage": true
+          }
+        ]
+      },
+      {
+        "senderId": "1",
+        "senderInfo": {
+          "name": "Slim",
+          "surname": "Shady",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+        },
+        "history": [
+          {
+            "text": "Heard Rihanna's last song?",
+            "time": "1673388774347",
+            "isOwnMessage": false
+          },
+          {
+            "text": "No eminem relax she's better than you anyway..",
+            "time": "1673388774488",
+            "isOwnMessage": true
+          },
+          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": false },
+          { "text": "dsa", "time": "2:09 pm", "isOwnMessage": false }
+        ]
+      }
+    ]
+  },
+  {
+    "login": "notorius",
+    "password": "notorius",
+    "id": "3",
+    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg",
+    "name": "Biggie",
+    "surname": "Smalls",
+    "location": "Brooklyn, New York",
+    "socialMedia": { "instagram": null, "twitter": null, "linkedIn": null },
+    "email": "big@gmail.com",
+    "info": {
+      "hobbies": "hip-hop and chill",
+      "music": "Michael Jackson",
+      "cinema": "New York Undercover, Martin",
+      "books": "will say later"
+    },
+    "friends": ["0", "1", "2"],
+    "posts": [
+      {
+        "id": "0",
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
+      },
+      {
+        "id": "0",
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "date": "1676475021785",
+        "text": "Megan Fox is not real!!",
+        "likes": 351215424,
+        "isLikedByUser": true
+      },
+      {
+        "id": "2",
+        "user": { "id": "3", "name": "Biggie", "surname": "Smalls" },
+        "date": "1676475021799",
+        "text": "I love CATS more than dogs =^____^=",
+        "likes": 83,
+        "isLikedByUser": false
+      }
+    ],
+    "photos": [
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/1.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/2.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/3.jpeg",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/4.webp",
+      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+    ],
+    "chat": [
+      {
+        "senderId": "0",
+        "senderInfo": {
+          "name": "Megan",
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+        },
+        "history": [
+          {
+            "text": "Wanna hang out?",
+            "time": "1673388774477",
+            "isOwnMessage": false
+          },
+          {
+            "text": "Дзякуй Меган, but no",
+            "time": "1673388774488",
+            "isOwnMessage": true
+          }
+        ]
+      },
+      {
+        "senderId": "1",
+        "senderInfo": {
+          "name": "Slim",
+          "surname": "Shady",
+          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+        },
+        "history": [
+          {
+            "text": "Heard Rihanna's last song?",
+            "time": "1673388774347",
+            "isOwnMessage": false
+          },
+          {
+            "text": "Yes it's sucks",
+            "time": "1673388774488",
+            "isOwnMessage": true
+          },
+          { "text": "Agree", "time": "1673388774499", "isOwnMessage": false },
+          { "text": "kjljl", "time": "2:33 pm", "isOwnMessage": false },
+          { "text": "calo", "time": "5:16 pm", "isOwnMessage": false },
+          { "text": "calo I reper", "time": "5:17 pm", "isOwnMessage": false },
+          { "text": "rep", "time": "5:20 pm", "isOwnMessage": false }
+        ]
+      }
+    ]
   }
 ]

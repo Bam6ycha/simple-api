@@ -81,3 +81,19 @@ export const login = (login: string, password: string) => {
     .pipe(streamValues())
     .pipe(transform);
 };
+
+export const updateUser = async (id: string, body: UserInterface) => {
+  try {
+    const users = await readFile(usersPath, { encoding: 'utf8' });
+
+    const parsedUsers = JSON.parse(users) as Array<UserInterface>;
+
+    const updatedUsers = parsedUsers.flatMap((user) =>
+      user.id === id ? body : user,
+    );
+
+    await writeFile(usersPath, JSON.stringify(updatedUsers));
+  } catch (error) {
+    console.log(error);
+  }
+};

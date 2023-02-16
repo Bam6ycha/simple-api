@@ -1,14 +1,15 @@
 import { NextFunction, Request, Response } from 'express';
 
 export interface UserInterface {
-  id: string;
-  profilePhoto: '';
+  login: string;
+  password: string;
+  readonly id: string;
+  profilePhoto: string | null;
   name: string;
   surname: string;
   location: string;
-  socialMedia: { instagram: string; twitter: string; linkedIn: string };
+  socialMedia: SocialMediaLinksInterface;
   email: string;
-  chat: Array<ChatInterface>;
   info: {
     hobbies: string;
     music: string;
@@ -18,21 +19,35 @@ export interface UserInterface {
   friends: Array<string>;
   posts: Array<PostInterface>;
   photos: Array<string>;
-  login: string;
-  password: string;
+  chat: Array<ChatInterface>;
+}
+
+interface SocialMediaLinksInterface {
+  instagram: string;
+  twitter: string;
+  linkedIn: string;
 }
 
 export interface PostInterface {
-  id: string;
-  userId: string;
-  date: string | number;
-  content: string;
+  readonly id: string;
+  user: {
+    readonly id: string;
+    name: string;
+    surname: string;
+  };
+  date: string;
+  text: string;
   likes: number;
   isLikedByUser: boolean;
 }
 
 export interface ChatInterface {
-  senderId: string;
+  readonly senderId: string;
+  senderInfo: {
+    name: string;
+    surname: string;
+    profilePhoto: string;
+  };
   history: Array<ChatHistoryInterface>;
 }
 
@@ -54,6 +69,6 @@ export type HandlerFunction = (
 ) => void;
 
 export interface UserMessageInterface {
-  text: string;
-  userIdTo: string;
+  readonly text: string;
+  readonly userIdTo: string;
 }
