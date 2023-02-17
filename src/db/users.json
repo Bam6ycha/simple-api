@@ -23,11 +23,7 @@
     "posts": [
       {
         "id": "1",
-        "user": {
-          "id": "0",
-          "name": "Megan",
-          "surname": "Fox"
-        },
+        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
         "date": "1676475021785",
         "text": "Хто тримає цей район? Пес Патрон, пес Патрон!",
         "likes": 34,
@@ -35,11 +31,7 @@
       },
       {
         "id": "2",
-        "user": {
-          "id": "0",
-          "name": "Megan",
-          "surname": "Fox"
-        },
+        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
         "date": "1676488446677",
         "text": "Хто крутіший за iPhone? Пес Патрон, пес Патрон!",
         "likes": 42,
@@ -47,11 +39,7 @@
       },
       {
         "id": "3",
-        "user": {
-          "id": "0",
-          "name": "Megan",
-          "surname": "Fox"
-        },
+        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
         "date": "1673388774477",
         "text": "Хто не ходить на газон? Пес Патрон, пес Патрон!",
         "likes": 55,
@@ -82,11 +70,7 @@
             "time": "1673388774477",
             "isOwnMessage": false
           },
-          {
-            "text": "Ok...",
-            "time": "1673388774479",
-            "isOwnMessage": true
-          }
+          { "text": "Ok...", "time": "1673388774479", "isOwnMessage": true }
         ]
       },
       {
@@ -151,15 +135,11 @@
       "cinema": "8 mile",
       "books": "cook books"
     },
-    "friends": ["0", "2", "3"],
+    "friends": [],
     "posts": [
       {
         "id": "0",
-        "user": {
-          "id": "1",
-          "name": "Slim",
-          "surname": "Shady"
-        },
+        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
         "date": "1676475021785",
         "text": "Megan Fox is not real!!",
         "likes": 0,
@@ -190,11 +170,7 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          {
-            "text": "Ok..",
-            "time": "1673388774499",
-            "isOwnMessage": false
-          }
+          { "text": "Ok..", "time": "1673388774499", "isOwnMessage": false }
         ]
       },
       {
@@ -215,11 +191,7 @@
             "time": "1673388774488",
             "isOwnMessage": false
           },
-          {
-            "text": "Agree",
-            "time": "1673388774499",
-            "isOwnMessage": true
-          }
+          { "text": "Agree", "time": "1673388774499", "isOwnMessage": true }
         ]
       },
       {
@@ -240,11 +212,7 @@
             "time": "1673388774488",
             "isOwnMessage": false
           },
-          {
-            "text": "Cruel",
-            "time": "1673388774499",
-            "isOwnMessage": true
-          }
+          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": true }
         ]
       }
     ]
@@ -273,11 +241,7 @@
     "posts": [
       {
         "id": "0",
-        "user": {
-          "id": "2",
-          "name": "Dog",
-          "surname": "Patron"
-        },
+        "user": { "id": "2", "name": "Dog", "surname": "Patron" },
         "date": "1676475021785",
         "text": "кішки sucks",
         "likes": 5,
@@ -285,11 +249,7 @@
       },
       {
         "id": "1",
-        "user": {
-          "id": "2",
-          "name": "Dog",
-          "surname": "Patron"
-        },
+        "user": { "id": "2", "name": "Dog", "surname": "Patron" },
         "date": "1676475021789",
         "text": "I <3 NY",
         "likes": 50,
@@ -341,11 +301,7 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          {
-            "text": "Cruel",
-            "time": "1673388774499",
-            "isOwnMessage": false
-          }
+          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": false }
         ]
       }
     ]
@@ -358,11 +314,7 @@
     "name": "Biggie",
     "surname": "Smalls",
     "location": "Brooklyn, New York",
-    "socialMedia": {
-      "instagram": null,
-      "twitter": null,
-      "linkedIn": null
-    },
+    "socialMedia": { "instagram": null, "twitter": null, "linkedIn": null },
     "email": "big@gmail.com",
     "info": {
       "hobbies": "hip-hop and chill",
@@ -374,11 +326,7 @@
     "posts": [
       {
         "id": "0",
-        "user": {
-          "id": "3",
-          "name": "Biggie",
-          "surname": "Smalls"
-        },
+        "user": { "id": "3", "name": "Biggie", "surname": "Smalls" },
         "date": "1676475021785",
         "text": "Biggie, Biggie, Biggie, can't you see? Sometimes your words just hypnotize me.",
         "likes": 503,
@@ -386,11 +334,7 @@
       },
       {
         "id": "1",
-        "user": {
-          "id": "3",
-          "name": "Biggie",
-          "surname": "Smalls"
-        },
+        "user": { "id": "3", "name": "Biggie", "surname": "Smalls" },
         "date": "1676475021799",
         "text": "And I just love your flashy ways. Guess that's why they broke, and you're so paid.",
         "likes": 503,
@@ -398,11 +342,7 @@
       },
       {
         "id": "2",
-        "user": {
-          "id": "3",
-          "name": "Biggie",
-          "surname": "Smalls"
-        },
+        "user": { "id": "3", "name": "Biggie", "surname": "Smalls" },
         "date": "1676475021799",
         "text": "I love CATS more than dogs =^____^=",
         "likes": 83,
@@ -455,11 +395,7 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          {
-            "text": "Agree",
-            "time": "1673388774499",
-            "isOwnMessage": false
-          }
+          { "text": "Agree", "time": "1673388774499", "isOwnMessage": false }
         ]
       }
     ]

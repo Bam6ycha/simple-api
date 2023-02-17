@@ -16,7 +16,7 @@ export interface UserInterface {
     cinema: string;
     books: string;
   };
-  friends: Array<string>;
+  friends: Array<FriendInterface>;
   posts: Array<PostInterface>;
   photos: Array<string>;
   chat: Array<ChatInterface>;
@@ -26,6 +26,13 @@ interface SocialMediaLinksInterface {
   instagram: string;
   twitter: string;
   linkedIn: string;
+}
+
+export interface FriendInterface {
+  id: string;
+  name: string;
+  surname: string;
+  profilePhoto: string | null;
 }
 
 export interface PostInterface {

@@ -7,6 +7,7 @@ import http from 'http';
 import * as UserController from './controllers/usersController';
 import * as PostsController from './controllers/postsController';
 import * as ChatsController from './controllers/chatsController';
+import * as FriendsController from './controllers/friendsController';
 import { formatMessage, updateChatHistory } from './utils';
 
 const PORT = process.env.PORT ?? 6969;
@@ -64,16 +65,19 @@ app.get('/newsfeed', PostsController.getAllPosts);
 app.get('/users/chat/:id', ChatsController.getUserChat);
 app.get('/users/:id', UserController.findUserById);
 app.get('/users', UserController.getAll);
+app.get('/friends/:id', FriendsController.getAllFriends);
 
 app.post('/newsfeed', PostsController.addPost);
 app.post('/user', UserController.addUser);
 app.post('/user/login', UserController.login);
+app.post('/friends/:id', FriendsController.addFriend);
 
 app.put('/newsfeed/:id', PostsController.updatePost);
 app.put('/users/:id', UserController.updateUser);
 
 app.delete('/newsfeed/:id', PostsController.deletePost);
 app.delete('/:id', UserController.deleteUser);
+app.delete('/friends/:userId/:friendId', FriendsController.deleteFriend);
 
 server.listen(PORT, () => {
   console.log(`Server listen on port ${PORT}`);
