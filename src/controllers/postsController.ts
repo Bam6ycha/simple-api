@@ -9,7 +9,7 @@ export const addPost: HandlerFunction = async (req, res, next) => {
     const bodyWithId: PostInterface = {
       ...body,
       id: v4(),
-      created: Date.now(),
+      date: Date.now(),
     };
 
     await PostsModel.addPost(bodyWithId);

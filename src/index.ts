@@ -9,7 +9,7 @@ import * as PostsController from './controllers/postsController';
 import * as ChatsController from './controllers/chatsController';
 import { formatMessage, updateChatHistory } from './utils';
 
-const PORT = process.env.PORT ?? 5000;
+const PORT = process.env.PORT ?? 6969;
 
 const app = express();
 

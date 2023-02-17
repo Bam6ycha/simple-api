@@ -35,7 +35,7 @@ export interface PostInterface {
     name: string;
     surname: string;
   };
-  date: string;
+  date: number;
   text: string;
   likes: number;
   isLikedByUser: boolean;
