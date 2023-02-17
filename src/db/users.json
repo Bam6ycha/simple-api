@@ -3,7 +3,7 @@
     "login": "meganfox",
     "password": "meganfox",
     "id": "0",
-    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+    "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
     "name": "Megan",
     "surname": "Fox",
     "location": "Mozyr, Belarus",
@@ -22,16 +22,24 @@
     "friends": ["1", "2", "3"],
     "posts": [
       {
-        "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "id": "1",
+        "user": {
+          "id": "0",
+          "name": "Megan",
+          "surname": "Fox"
+        },
         "date": "1676475021785",
-        "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "text": "Хто тримає цей район? Пес Патрон, пес Патрон!",
+        "likes": 34,
+        "isLikedByUser": false
       },
       {
         "id": "2",
-        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
+        "user": {
+          "id": "0",
+          "name": "Megan",
+          "surname": "Fox"
+        },
         "date": "1676488446677",
         "text": "Хто крутіший за iPhone? Пес Патрон, пес Патрон!",
         "likes": 42,
@@ -39,7 +47,11 @@
       },
       {
         "id": "3",
-        "user": { "id": "0", "name": "Megan", "surname": "Fox" },
+        "user": {
+          "id": "0",
+          "name": "Megan",
+          "surname": "Fox"
+        },
         "date": "1673388774477",
         "text": "Хто не ходить на газон? Пес Патрон, пес Патрон!",
         "likes": 55,
@@ -47,9 +59,9 @@
       }
     ],
     "photos": [
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/1.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
     ],
     "chat": [
       {
@@ -57,7 +69,7 @@
         "senderInfo": {
           "name": "Slim",
           "surname": "Shady",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
         },
         "history": [
           {
@@ -70,7 +82,11 @@
             "time": "1673388774477",
             "isOwnMessage": false
           },
-          { "text": "Ok...", "time": "1673388774479", "isOwnMessage": true }
+          {
+            "text": "Ok...",
+            "time": "1673388774479",
+            "isOwnMessage": true
+          }
         ]
       },
       {
@@ -78,7 +94,7 @@
         "senderInfo": {
           "name": "Dog",
           "surname": "Patron",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
         },
         "history": [
           {
@@ -98,7 +114,7 @@
         "senderInfo": {
           "name": "Biggie",
           "surname": "Smalls",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
         },
         "history": [
           {
@@ -119,7 +135,7 @@
     "login": "eminem",
     "password": "eminem",
     "id": "1",
-    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg",
+    "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg",
     "name": "Slim",
     "surname": "Shady",
     "location": "Brest, Belarus",
@@ -139,17 +155,21 @@
     "posts": [
       {
         "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "user": {
+          "id": "1",
+          "name": "Slim",
+          "surname": "Shady"
+        },
         "date": "1676475021785",
         "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "likes": 0,
+        "isLikedByUser": false
       }
     ],
     "photos": [
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/1.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/2.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
     ],
     "chat": [
       {
@@ -157,7 +177,7 @@
         "senderInfo": {
           "name": "Megan",
           "surname": "Fox",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
         "history": [
           {
@@ -170,7 +190,11 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          { "text": "Ok..", "time": "1673388774499", "isOwnMessage": false }
+          {
+            "text": "Ok..",
+            "time": "1673388774499",
+            "isOwnMessage": false
+          }
         ]
       },
       {
@@ -178,7 +202,7 @@
         "senderInfo": {
           "name": "Biggie",
           "surname": "Smalls",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
         },
         "history": [
           {
@@ -191,11 +215,11 @@
             "time": "1673388774488",
             "isOwnMessage": false
           },
-          { "text": "Agree", "time": "1673388774499", "isOwnMessage": true },
-          { "text": "kjljl", "time": "2:33 pm", "isOwnMessage": true },
-          { "text": "calo", "time": "5:16 pm", "isOwnMessage": true },
-          { "text": "calo I reper", "time": "5:17 pm", "isOwnMessage": true },
-          { "text": "rep", "time": "5:20 pm", "isOwnMessage": true }
+          {
+            "text": "Agree",
+            "time": "1673388774499",
+            "isOwnMessage": true
+          }
         ]
       },
       {
@@ -203,7 +227,7 @@
         "senderInfo": {
           "name": "Dog",
           "surname": "Patron",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
         },
         "history": [
           {
@@ -216,8 +240,11 @@
             "time": "1673388774488",
             "isOwnMessage": false
           },
-          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": true },
-          { "text": "dsa", "time": "2:09 pm", "isOwnMessage": true }
+          {
+            "text": "Cruel",
+            "time": "1673388774499",
+            "isOwnMessage": true
+          }
         ]
       }
     ]
@@ -226,7 +253,7 @@
     "login": "pespatron",
     "password": "pespatron",
     "id": "2",
-    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
+    "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
     "name": "Dog",
     "surname": "Patron",
     "location": "Kyiv, Ukraine",
@@ -246,26 +273,34 @@
     "posts": [
       {
         "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "user": {
+          "id": "2",
+          "name": "Dog",
+          "surname": "Patron"
+        },
         "date": "1676475021785",
-        "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "text": "кішки sucks",
+        "likes": 5,
+        "isLikedByUser": false
       },
       {
-        "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
-        "date": "1676475021785",
-        "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "id": "1",
+        "user": {
+          "id": "2",
+          "name": "Dog",
+          "surname": "Patron"
+        },
+        "date": "1676475021789",
+        "text": "I <3 NY",
+        "likes": 50,
+        "isLikedByUser": false
       }
     ],
     "photos": [
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/2.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/3.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/patron/4.jpeg"
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/3.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/4.jpeg"
     ],
     "chat": [
       {
@@ -273,7 +308,7 @@
         "senderInfo": {
           "name": "Megan",
           "surname": "Fox",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
         "history": [
           {
@@ -293,7 +328,7 @@
         "senderInfo": {
           "name": "Slim",
           "surname": "Shady",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
         },
         "history": [
           {
@@ -306,8 +341,11 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          { "text": "Cruel", "time": "1673388774499", "isOwnMessage": false },
-          { "text": "dsa", "time": "2:09 pm", "isOwnMessage": false }
+          {
+            "text": "Cruel",
+            "time": "1673388774499",
+            "isOwnMessage": false
+          }
         ]
       }
     ]
@@ -316,11 +354,15 @@
     "login": "notorius",
     "password": "notorius",
     "id": "3",
-    "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg",
+    "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg",
     "name": "Biggie",
     "surname": "Smalls",
     "location": "Brooklyn, New York",
-    "socialMedia": { "instagram": null, "twitter": null, "linkedIn": null },
+    "socialMedia": {
+      "instagram": null,
+      "twitter": null,
+      "linkedIn": null
+    },
     "email": "big@gmail.com",
     "info": {
       "hobbies": "hip-hop and chill",
@@ -332,23 +374,35 @@
     "posts": [
       {
         "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
+        "user": {
+          "id": "3",
+          "name": "Biggie",
+          "surname": "Smalls"
+        },
         "date": "1676475021785",
-        "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "text": "Biggie, Biggie, Biggie, can't you see? Sometimes your words just hypnotize me.",
+        "likes": 503,
+        "isLikedByUser": false
       },
       {
-        "id": "0",
-        "user": { "id": "1", "name": "Slim", "surname": "Shady" },
-        "date": "1676475021785",
-        "text": "Megan Fox is not real!!",
-        "likes": 351215424,
-        "isLikedByUser": true
+        "id": "1",
+        "user": {
+          "id": "3",
+          "name": "Biggie",
+          "surname": "Smalls"
+        },
+        "date": "1676475021799",
+        "text": "And I just love your flashy ways. Guess that's why they broke, and you're so paid.",
+        "likes": 503,
+        "isLikedByUser": false
       },
       {
         "id": "2",
-        "user": { "id": "3", "name": "Biggie", "surname": "Smalls" },
+        "user": {
+          "id": "3",
+          "name": "Biggie",
+          "surname": "Smalls"
+        },
         "date": "1676475021799",
         "text": "I love CATS more than dogs =^____^=",
         "likes": 83,
@@ -356,11 +410,11 @@
       }
     ],
     "photos": [
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/1.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/2.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/3.jpeg",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/4.webp",
-      "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/3.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/4.webp",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
     ],
     "chat": [
       {
@@ -368,7 +422,7 @@
         "senderInfo": {
           "name": "Megan",
           "surname": "Fox",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
         "history": [
           {
@@ -388,7 +442,7 @@
         "senderInfo": {
           "name": "Slim",
           "surname": "Shady",
-          "profilePhoto": "https://raw.githubusertext.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
         },
         "history": [
           {
@@ -401,11 +455,11 @@
             "time": "1673388774488",
             "isOwnMessage": true
           },
-          { "text": "Agree", "time": "1673388774499", "isOwnMessage": false },
-          { "text": "kjljl", "time": "2:33 pm", "isOwnMessage": false },
-          { "text": "calo", "time": "5:16 pm", "isOwnMessage": false },
-          { "text": "calo I reper", "time": "5:17 pm", "isOwnMessage": false },
-          { "text": "rep", "time": "5:20 pm", "isOwnMessage": false }
+          {
+            "text": "Agree",
+            "time": "1673388774499",
+            "isOwnMessage": false
+          }
         ]
       }
     ]
