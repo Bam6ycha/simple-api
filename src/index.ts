@@ -49,7 +49,7 @@ wss.on('connection', (socket) => {
 
 app.use(cors());
 app.use(urlencoded({ extended: false }));
-app.use(json);
+app.use(json());
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.setHeader('charset', 'utf8');
