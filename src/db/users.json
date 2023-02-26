@@ -45,9 +45,10 @@
         "user": {
           "id": "0",
           "name": "Megan",
-          "surname": "Fox"
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
-        "date": "1676475021785",
+        "date": "1679384021785",
         "text": "Хто тримає цей район? Пес Патрон, пес Патрон!",
         "likes": 34,
         "isLikedByUser": false
@@ -57,9 +58,10 @@
         "user": {
           "id": "0",
           "name": "Megan",
-          "surname": "Fox"
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
-        "date": "1676488446677",
+        "date": "1646388446677",
         "text": "Хто крутіший за iPhone? Пес Патрон, пес Патрон!",
         "likes": 42,
         "isLikedByUser": false
@@ -69,9 +71,10 @@
         "user": {
           "id": "0",
           "name": "Megan",
-          "surname": "Fox"
+          "surname": "Fox",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg"
         },
-        "date": "1673388774477",
+        "date": "1637388774477",
         "text": "Хто не ходить на газон? Пес Патрон, пес Патрон!",
         "likes": 55,
         "isLikedByUser": false
@@ -196,9 +199,10 @@
         "user": {
           "id": "1",
           "name": "Slim",
-          "surname": "Shady"
+          "surname": "Shady",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
         },
-        "date": "1676475021785",
+        "date": "1667475021785",
         "text": "Megan Fox is not real!!",
         "likes": 0,
         "isLikedByUser": false
@@ -207,7 +211,27 @@
     "photos": [
       "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/1.jpeg",
       "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/2.jpeg",
-      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg"
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/eminem/3.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/1.jpeg",
+      "https://img.freepik.com/free-photo/closeup-heart-in-the-color-of-the-flag-of-ukraine-in-female-hands_169016-19930.jpg",
+      "https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg",
+      "https://img.freepik.com/free-photo/group-of-people-working-out-business-plan-in-an-office_1303-15861.jpg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/megan/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/3.jpeg",
+      "https://img.freepik.com/free-photo/portrait-of-beautiful-young-woman-standing-on-grey-wall_231208-10760.jpg",
+      "https://img.freepik.com/free-photo/family-in-forest_1303-4712.jpg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/4.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/1.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/2.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/3.jpeg",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/4.webp",
+      "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg",
+      "https://img.freepik.com/free-photo/close-up-of-handsome-professional-man-cross-arms-on-chest-and-looking-confident-at-camera-smiling-determined-standing-against-white-background_176420-53771.jpg",
+      "https://img.freepik.com/free-photo/wedding-couple-in-france_1303-5588.jpg",
+      "https://img.freepik.com/free-photo/african-american-business-woman-working-in-a-cafe_1303-10862.jpg"
     ],
     "chat": [
       {
@@ -333,9 +357,10 @@
         "user": {
           "id": "2",
           "name": "Dog",
-          "surname": "Patron"
+          "surname": "Patron",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
         },
-        "date": "1676475021785",
+        "date": "1677645021785",
         "text": "кішки sucks",
         "likes": 5,
         "isLikedByUser": false
@@ -345,9 +370,10 @@
         "user": {
           "id": "2",
           "name": "Dog",
-          "surname": "Patron"
+          "surname": "Patron",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/patron/1.jpeg"
         },
-        "date": "1676475021789",
+        "date": "1576475021789",
         "text": "I <3 NY",
         "likes": 50,
         "isLikedByUser": false
@@ -453,9 +479,10 @@
         "user": {
           "id": "3",
           "name": "Biggie",
-          "surname": "Smalls"
+          "surname": "Smalls",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
         },
-        "date": "1676475021785",
+        "date": "1646475021785",
         "text": "Biggie, Biggie, Biggie, can't you see? Sometimes your words just hypnotize me.",
         "likes": 503,
         "isLikedByUser": false
@@ -465,9 +492,10 @@
         "user": {
           "id": "3",
           "name": "Biggie",
-          "surname": "Smalls"
+          "surname": "Smalls",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
         },
-        "date": "1676475021799",
+        "date": "1673475021799",
         "text": "And I just love your flashy ways. Guess that's why they broke, and you're so paid.",
         "likes": 503,
         "isLikedByUser": false
@@ -477,9 +505,10 @@
         "user": {
           "id": "3",
           "name": "Biggie",
-          "surname": "Smalls"
+          "surname": "Smalls",
+          "profilePhoto": "https://raw.githubusercontent.com/zhuravskayalina/soc-network-photos/main/notorius/5.jpeg"
         },
-        "date": "1676475021799",
+        "date": "1672475021799",
         "text": "I love CATS more than dogs =^____^=",
         "likes": 83,
         "isLikedByUser": false
