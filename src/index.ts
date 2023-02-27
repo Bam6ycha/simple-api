@@ -14,6 +14,7 @@ import * as PostsController from './controllers/postsController';
 import * as ChatsController from './controllers/chatsController';
 import * as FriendsController from './controllers/friendsController';
 import { formatMessage, updateChatHistory } from './utils';
+import { v4 } from 'uuid';
 
 const PORT = process.env.PORT ?? 6969;
 
@@ -37,13 +38,25 @@ wss.on('connection', (socket) => {
     userId: socket.handshake.auth.userId,
   });
 
-  socket.on('chatMessage', async ({ to, ...rest }) => {
-    const userIdFrom = users.find((user) => user.userSocketId === to)?.userId;
+  socket.on('chatMessage', async ({ to: userIdTo, isOwnMessage, ...rest }) => {
+    const userSocketId = users.find(
+      (user) => user.userId === userIdTo,
+    )?.userSocketId;
     const { text, time, userId } = formatMessage(rest);
 
-    await updateChatHistory(`${userIdFrom}`, `${userId}`, { text, time });
+    const messageId = v4();
 
-    socket.broadcast.to(to).emit('message', { text, time });
+    await updateChatHistory(`${userId}`, `${userIdTo}`, {
+      text,
+      time,
+      id: messageId,
+    });
+
+    if (userSocketId) {
+      socket.broadcast
+        .to(userSocketId)
+        .emit('message', { text, time, isOwnMessage, id: messageId });
+    }
   });
 });
 

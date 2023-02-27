@@ -28,7 +28,7 @@ export const formatMessage = (message: UserMessageInterface) => {
 export const updateChatHistory = async (
   userIdFrom: string,
   userIdTo: string,
-  { text, time }: { text: string; time: string },
+  { text, time, id }: { text: string; time: string; id: string },
 ) => {
   const users = await readFile(usersPath, { encoding: 'utf8' });
   const parsedUsers = JSON.parse(users) as Array<UserInterface>;
@@ -53,7 +53,7 @@ export const updateChatHistory = async (
                     ...chatWIthUser,
                     history: [
                       ...chatWIthUser.history,
-                      { text, time, isOwnMessage: true },
+                      { text, time, isOwnMessage: true, id },
                     ],
                   }
                 : chatWIthUser,
@@ -70,7 +70,7 @@ export const updateChatHistory = async (
                   surname,
                   profilePhoto,
                 },
-                history: [{ text, time, isOwnMessage: true }],
+                history: [{ text, time, isOwnMessage: true, id }],
               },
             ],
           };
@@ -90,7 +90,7 @@ export const updateChatHistory = async (
                     ...chatWIthUser,
                     history: [
                       ...chatWIthUser.history,
-                      { text, time, isOwnMessage: false },
+                      { text, time, isOwnMessage: false, id },
                     ],
                   }
                 : chatWIthUser,
@@ -103,7 +103,7 @@ export const updateChatHistory = async (
               {
                 senderId: userIdFrom,
                 senderInfo: { name, surname, profilePhoto },
-                history: [{ text, time, isOwnMessage: false }],
+                history: [{ text, time, isOwnMessage: false, id }],
               },
             ],
           };
