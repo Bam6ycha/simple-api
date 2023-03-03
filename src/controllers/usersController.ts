@@ -73,8 +73,14 @@ export const login: HandlerFunction = (req, res, next) => {
 };
 
 export const updateUser: HandlerFunction = async (req, res, next) => {
-  const { id: userId } = req.params;
-  const { body } = req;
+  try {
+    const { id: userId } = req.params;
+    const { body } = req;
 
-  await UsersModel.updateUser(userId, body);
+    await UsersModel.updateUser(userId, body);
+
+    res.status(200).send(`User ${userId} was successfully updated.`);
+  } catch (error) {
+    res.status(400).send(`Bad request`);
+  }
 };
